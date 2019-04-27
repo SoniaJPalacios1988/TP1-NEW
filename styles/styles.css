@@ -1,23 +1,32 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
+.sale-items{
+    width:98%;
+    margin: auto;
+    background-color: blueviolet;
+}
+.sale-items ul{
+    padding: 0;
+    display: flex;
+    width: 33,33%;
+    border: 1px solid black;
+}
+.sale-items li{
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+}
+.sale-items img{
+    border: 1px solid black;
+    height: 450px;
+    width: 98%;
+}
+.sale{
+    background-color: #FFD700;
+    padding: 0;
+    margin: 0 auto;
+    height: 20px;
+    width: 100px;
+    border: 1px solid #000000;
+    font-family: 'Gugi';
+    font-size:50;
+    justify-content: center;
 }
