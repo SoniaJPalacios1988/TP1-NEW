@@ -1,5 +1,10 @@
+li , ul{
+    list-style: none;
+    text-decoration: none;
+}
 .sale-items{
     width:98%;
+    height: 600px;
     margin: auto;
     background-color: blueviolet;
 }
@@ -11,15 +16,17 @@
 }
 .sale-items li{
     width: 100%;
-    list-style: none;
-    text-decoration: none;
 }
 .sale-items img{
     border: 1px solid black;
-    height: 450px;
+    height: 600px;
     width: 98%;
+    position:relative;
 }
-.sale{
+.sale-tag{
+    position:absolute;
+    top: 20px;
+    left: 440px; 
     background-color: #FFD700;
     padding: 0;
     margin: 0 auto;
@@ -28,5 +35,34 @@
     border: 1px solid #000000;
     font-family: 'Gugi';
     font-size:50;
-    justify-content: center;
+}
+.promotions{
+    width:98%;
+    height: 200px;
+    margin: auto;
+    background-color: blue;
+}
+.products-list ul{
+    padding: 0;
+    display: flex;
+    width: 33,33%;
+    border: 1px solid black;
+}
+.products-list  li{
+    margin: 5px 20px 5px 10px;   
+    width: 100%;
+}
+.product{
+    font-family: 'Gugi', cursive;
+}
+.collection{
+    color: #9b9b9b;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+.price{
+    font-family: 'Gugi', cursive;
+    color: #000000;
+}
+span{
+    color: #9b9b9b;
 }
