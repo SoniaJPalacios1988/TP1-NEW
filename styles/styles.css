@@ -1,4 +1,4 @@
-li , ul{
+li , ul, a{
     list-style: none;
     text-decoration: none;
 }
@@ -12,6 +12,7 @@ li , ul{
     padding: 0;
     display: flex;
     width: 33,33%;
+    height: 600px;
     border: 1px solid black;
 }
 .sale-items li{
@@ -25,44 +26,81 @@ li , ul{
 }
 .sale-tag{
     position:absolute;
-    top: 20px;
-    left: 440px; 
+    top: 40px;
+    left: 405px; 
     background-color: #FFD700;
-    padding: 0;
     margin: 0 auto;
-    height: 20px;
-    width: 100px;
+    height: 35px;
+    width: 80px;
     border: 1px solid #000000;
+    transform: rotate(-90deg);
+}
+.sale-tag p{
     font-family: 'Gugi';
-    font-size:50;
+    text-align: center;
+    font-weight: bold;
+    margin: 2px auto;
+}
+.container2{
+    width:98%;
+    height: 150px;
+    margin: 0 0 0 1% ;
+    display: inline-flex;
+    flex-flow: row;
+    position: relative;
+    bottom:160px;
+    justify-content: center;
+    align-items: center;
 }
 .promotions{
-    width:98%;
-    height: 200px;
-    margin: auto;
-    background-color: blue;
+    display: flex;
+    flex: 0 0 300px 300px;
+    padding: 0;
+    height: 150px;
+    width: 100%;
+    margin: 0 6px 0 6px;
+    border: 1px solid black;
 }
 .products-list ul{
     padding: 0;
-    display: flex;
-    width: 33,33%;
-    border: 1px solid black;
+    margin: 0;
 }
-.products-list  li{
-    margin: 5px 20px 5px 10px;   
+.products-list li{
+    margin: 0; 
+    padding: 5px 10px 5px 10px;  
     width: 100%;
 }
-.product{
+.product1, .product2, .product3 {
     font-family: 'Gugi', cursive;
+    font-size: x-large;
+}
+.product1 .product3 > li{
+    position:relative;
+    left: 50px;
+   
 }
 .collection{
     color: #9b9b9b;
     font-family: 'Quattrocento Sans', sans-serif;
+    font-size: small;
+    font-weight: bold;
 }
-.price{
+.price > li{
     font-family: 'Gugi', cursive;
     color: #000000;
+    font-size: medium;
 }
 span{
     color: #9b9b9b;
+    margin: 0px 5px 0 5px;
+    text-decoration-line: line-through;
+}
+.banner h2{
+    width: 100%;
+    height: 40px;
+    padding: 50px 20px 20px 20px;
+    text-align: center;
+    background-color: green;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: xx-large;
 }
