@@ -1,85 +1,129 @@
-li , ul, a{
-    list-style: none;
-    text-decoration: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
 }
-.sale-items{
-    width:98%;
-    height: 600px;
-    margin: auto;
-    background-color: blueviolet;
+/*<i class="fas fa-bars"></i>*
+Abril+Fatface|Gugi|Luckiest+Guy|Quattrocento+Sans*/ 
+li, a, ul {
+  list-style: none;
+  text-decoration: none; 
 }
-.sale-items ul{
-    padding: 0;
-    display: flex;
-    width: 33,33%;
-    height: 600px;
-    border: 1px solid black;
+p {
+  color: #9b9b9b; 
 }
-.sale-items li{
-    width: 100%;
+section{
+  min-width: 300px;
 }
-.sale-items img{
-    border: 1px solid black;
-    height: 600px;
+/*-----------------Seccion de productos elementos en comun*-----------*/
+.products-up > div img, .products-down > div img{
+  margin:auto;
+  width:100%;
+  padding: 0;
+  height: 400px;
+  border: solid 1px black;
+}
+.promotion-down, .promotion-up{
+  width:98%;
+  height: 150px;
+  margin: 0 0 0 1% ;
+  display: flex;
+  flex-flow: row;
+  flex-grow: initial;
+  position: relative;
+  bottom:160px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+/*--------------------------Seccion Products up-----------------------------*/
+.products-up {
     width: 98%;
-    position:relative;
+    display: flex;
+    flex-direction: row;
+    flex-grow: initial;
+    height: 400px;
+    padding: 2% auto;
+    margin: auto;
+    border: solid 1px black;
+    overflow: hidden;
 }
+.products-up > .item3{
+  display: none;
+  overflow: hidden;
+}
+/*--------------------------------Seccion Products down----------------------*/
+.products-down{
+  width: 98%;
+  display: block;
+  height: 600px;
+  padding: 0;
+  margin: auto;
+  border: solid 1px black;
+overflow: hidden;
+}
+.products-down > .item1{
+  display: none;
+  overflow: hidden;
+}
+.products-down > .item3{
+  display: none;
+  overflow: hidden;
+}
+.products-down .offer-third{
+  display: none;
+  overflow: hidden;
+}
+  /*-----------SALE TAG------------------------------*/
 .sale-tag{
-    position:absolute;
-    top: 40px;
-    left: 405px; 
-    background-color: #FFD700;
-    margin: 0 auto;
-    height: 35px;
-    width: 80px;
-    border: 1px solid #000000;
-    transform: rotate(-90deg);
+  position: absolute;
+  top: 40px;
+  background-color: #FFD700;
+  margin: 0 auto;
+  height: 35px;
+  width: 50px;
+  border: 1px solid #000000;
+  transform: rotate(-90deg);
 }
 .sale-tag p{
-    font-family: 'Gugi';
-    text-align: center;
-    font-weight: bold;
-    margin: 2px auto;
+  color: #000000;
+  font-family: 'Gugi';
+  text-align: center;
+  font-weight: bold;
+  margin: 2px auto;
 }
-.container2{
-    width:98%;
-    height: 150px;
-    margin: 0 0 0 1% ;
-    display: inline-flex;
-    flex-flow: row;
-    position: relative;
-    bottom:160px;
-    justify-content: center;
-    align-items: center;
+ /*---------------------Caja describiendo ofertas----------------*/
+.description ul{
+  padding: 0;
+  margin: 0;
 }
-.promotions{
-    display: flex;
-    flex: 0 0 300px 300px;
-    padding: 0;
-    height: 150px;
-    width: 100%;
-    margin: 0 6px 0 6px;
-    border: 1px solid black;
-}
-.products-list ul{
-    padding: 0;
-    margin: 0;
-}
-.products-list li{
-    margin: 0; 
-    padding: 5px 10px 5px 10px;  
-    width: 100%;
+.description li{
+  margin: 0; 
+  padding: 5px 10px 5px 10px;  
+  width: 100%;
 }
 .product1, .product2, .product3 {
-    font-family: 'Gugi', cursive;
-    font-size: x-large;
+  font-family: 'Gugi', cursive;
+  font-size: x-large;
 }
 .product1 .product3 > li{
-    position:relative;
-    left: 50px;
-   
+  position:relative;
+  left: 50px;
 }
-.collection{
+
+ /*-------------Seccion del Banner*-----------------*/
+
+.banner {
+  width: 98%;
+  line-height: 100px;
+  text-align: center;
+  background-color: green;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: xx-large;
+  font-weight: bolder; }
+ 
+  .collection{
     color: #9b9b9b;
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: small;
@@ -95,12 +139,74 @@ span{
     margin: 0px 5px 0 5px;
     text-decoration-line: line-through;
 }
-.banner h2{
-    width: 100%;
-    height: 40px;
-    padding: 50px 20px 20px 20px;
-    text-align: center;
-    background-color: green;
-    font-family: 'Quattrocento Sans', sans-serif;
-    font-size: xx-large;
+  /*-------------Seccion del Footer*-----------------*/
+  footer {
+    margin: auto;
+    padding: 0;
+    width: 98%;
+    box-sizing: border-box; 
+    border: 1px solid black;
+  }
+  .column-left, .column-center, .column-right{
+    border: 1px solid black;
+    padding:  0 0 5% 3% ;
+    margin: 10% auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+  }
+ footer h3 {
+  color: #000000; 
+  font-family: 'Gugi';
+}
+footer p li{
+  color: #9b9b9b;
+  font-family: 'Gugi';
+}
+footer a {
+  text-decoration: none;
+  color: #9b9b9b;
+ margin: 10px 0 10px 0;
+  font-family: 'Gugi';
+}
+
+  
+/*-------------Media queries*-----------------*/
+
+  @media only screen and (min-width:641px) and (max-width:1280px){
+    .products-down > div{
+      display: flex;
+      flex-flow: column;
+      width:100%;
+      padding: 0 ;
+    height: 200px;
+    margin: auto;
+    border: solid 2px black;
+    }
+    .products-down > div img{
+      display: flex;
+      flex-flow: column;
+      width:33,33%;
+      padding: 0 ;
+    height: 200px;
+    margin: auto;
+    border: solid 2px black;
+    }
+    .sale-tag{
+        position: absolute;
+        top: 40px;
+        left: 405px; 
+        height: 35px;
+        width: 80px;
+      }
+    }
+@media only screen and (min-width:180px) and (max-width:640px){
+  .promotion-down > .offer-one{
+    display: none;
+    overflow: hidden;
+  }
+    .offer-third{
+      display: none;
+    overflow: hidden;
+  }
 }
