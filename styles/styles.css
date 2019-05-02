@@ -1,8 +1,32 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
 /*-----------------GUIA NOMBRE DE FUENTES 
-  Abril+Fatface|
+  
   Gugi|
-  Luckiest+Guy|
-  Quattrocento+Sans ---------------------*/ 
+  Quattrocento+Sans 
+  Rubik Mono One
+  Rubik*/ 
 
 /*-----------------Seccion de productos elementos en comun*-----------*/
 *{
@@ -15,25 +39,211 @@ li, a, ul {
   text-decoration: none; 
 }
 p {
-  color: #9b9b9b; 
+  color:  rgb(97, 97, 97); 
 }
+ /* --------------------------------Sección del navegador y la cara de psicópata---------------------------------------------------- */
+ .madewell{
+	display: block;
+	position: relative;
+	background-image: url("../images/PNG/person_transparent.png"); /*altacaradepsicópata*/
+	background-repeat: no-repeat;
+	background-position: right 100%;
+	background-size: 36%;
+	background-position-x: 88%;
+	background-color: rgb(249, 249, 249);
+	width: 100%;
+	height: 600px;
+} 
+.dealers{
+	float: left;
+	padding: 16px;
+	font-family: 'Rubik Mono One', sans-serif;
+	margin-left: 4%;
+}
+.mwtext{
+    display: block;
+    width: 40%;
+    height: 60px;
+    margin-top:24%;
+    margin-left: 0%;
+    float: left;
+  	color:  rgb(0, 0, 0);
+}
+.h2madewell{
+	color:  rgb(0, 0, 0);
+  margin-top: 4%;
+	font-family: 'Rubik Mono One', sans-serif;
+	display: center;
+	font-size: 72px;
+	text-align: center;
+}
+.psummer{
+	display: center;
+  font-family: 'Rubik', sans-serif;
+	font-size: 16px;
+	text-align: center;
+}
+.mprice{
+	float: center;
+	margin-left: 32%;
+	margin-top: 1%;
+}
+.mprice1{
+	display: inline-block;
+	padding: 16px;
+	color: rgb(0, 0, 0);
+	font-family: 'Rubik', sans-serif;
+	font-size: 24px;
+	text-align: center;
+}
+.mprice2{
+	display: inline-block;
+	padding: 16px;
+	color: rgb(97, 97, 97);
+	font-family: 'Rubik', sans-serif;
+	font-size: 24px;
+	text-align: center;
+	text-decoration: line-through;
+}
+/*------------Botones de compra---------*/
+.shopnow0{
+	float: center;
+	margin-left: 30%;
+	margin-top: 6%;	
+}
+.shopnow0 >li >a{
+	font-size: 12px;
+}
+.shopnow1{
+	display: inline-block;
+	padding: 10px 28px;
+	border: solid 2px;
+	border-color:  rgb(32, 125, 254);
+	font-family: 'Rubik', sans-serif;
+  text-align: center;
+	background-color: transparent;
+	color: rgb(32, 125, 254);
+}
+.shopnow1 > a{
+	color: rgb(32, 125, 254);
+}
+.shopnow2{
+	display: inline-block;
+	padding: 10px 28px;
+	border: solid 2px;
+	border-color:  rgb(32, 125, 254);
+	background-color: rgb(32, 125, 254);
+	font-family: 'Rubik', sans-serif;
+	text-align: center;
+	color: rgb(249, 249, 249);
+}
+.shopnow2 > a{
+	color: rgb(249, 249, 249);
+}
+/*----------------------- Menu principal--------------------- */
+.navbar{
+	float: right;
+	margin-right: 64px; 
+}
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+.menu > li > a{
+	display: block;
+	padding: 16px 16px;
+	font-family: 'Rubik', sans-serif;
+	color: rgb(0, 0, 0);
+}
+.menu li a:hover{
+	color: rgb(32, 125, 254); 
+	transition: all .3s;
+}
+/*-----------------------  Submenu---------------------  */
+.submenu{
+	position: absolute;
+	background: rgb(249, 249, 249);
+	width: 152%;
+	border-top: 4px solid rgb(32, 125, 254); 
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+.submenu li a{
+	display: block;
+	padding: 16px;
+	text-decoration: none;
+	font-family: 'Rubik', sans-serif;
+	color:  rgb(0, 0, 0);
+}
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+/* ------------------------------------------------Desde aquì hacemos el div Jacket------------------------------------------------- */
+
+/*----------------- Estilo de div JACKET -------------------*/
+div#Jacket{
+  margin: auto;
+  margin-bottom: -50px;
+  display: block;
+	background-image: url("../images/PNG/model_woman_1.png");
+	background-repeat: no-repeat;
+	background-position: left 100%;
+	background-size: 50%;
+	background-color: rgb(249, 249, 249);
+	width: 100%;
+  height: 700px;
+}
+/*----------------- Estilo del div de texto y boton-------------------- */
+div#J_Text{
+  display: block;
+  margin-top:10%;
+  margin-right: 15%;
+  float: right;
+	background-color: rgb(249, 249, 249);
+	text-align: center;
+}
+/*-------------------- Estilo de boton -----------------------------*/
+.SHOP_NOW{
+    display: center;
+    margin-top: 10%;
+	border: none;
+	padding: 16px 48px;
+	background:  rgb(0, 0, 0);
+	color:  rgb(255, 255, 255);
+	
+}
+/* Estilo de texto */
+.NTitle{
+    color: rgb(0, 0, 0);
+    margin-top: 4%;
+    font-family: 'Rubik Mono One', sans-serif;
+    display: center;
+    font-size: 72px;
+}
+.NText{
+    display: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+}
+/*-----------------Seccion de productos -----------*/
 .products-up, .products-down {
   display: flex;
   width: 80%;   
   height: 400px;
   margin: 0 auto;
   position: relative;
-  background-color: aqua;
-  border: 1px solid black;
+  background-color: aqua;  /*COLOR DE GUIA*/
+  border: 1px solid  rgb(0, 0, 0);
   align-items: center;
 }
-/*-----------------Seccion de productos *-----------*/
 .products-up > div img, .products-down >  div img{
   justify-content: space-between;
   height: 400px;
   width: 100%;
   max-width: 400px;
-  border: 1px solid black;
+  border: 1px solid  rgb(0, 0, 0);
   position:relative;
   padding: 0 0 0 2%;
 }
@@ -47,15 +257,12 @@ p {
   margin: auto;
   position: relative;
   background-color: pink;
-  border: 1px solid black;
 }
 .box div{
   height: 120px;
   width: 230px;
   margin: auto;
-  border: 1px solid black;
 }
-
 /*-----------SALE TAG------------------------------*/
 .sale-tag {
   display:flex;
@@ -70,12 +277,11 @@ p {
   width: 90px;
   padding: 2px;
   transform: rotate(-90deg);
-  color: #000000;
+  color: rgb(0, 0, 0);
   font-family: 'Gugi';
   text-align: center;
   font-weight: bold;
 }
-
 /* ---------------------Caja describiendo ofertas----------------*/
 div > .description ul{
   display: flex;
@@ -96,22 +302,116 @@ div > .description ul{
 }
 .price > li{
   font-family: 'Gugi', cursive;
-  color: #000000;
+  color: rgb(0, 0, 0);
   font-size: medium;
 }
 span{
-  color: #9b9b9b;
+  color: rgb(97, 97, 97);
   margin: 0px 5px 0 5px;
   text-decoration-line: line-through;
 }
 .collection {
-  color: #9b9b9b;
+  color:  rgb(97, 97, 97);
   font-family: 'Quattrocento Sans', sans-serif;
-  font-size: small;
+  font-size: medium;
   font-weight: bold;
 }
-/*-------------Seccion del Banner*-----------------*/
+/* ----------------------------------------- Estilo de NEW DENIM COAT ------------------------------------------------ */
 
+/* Estilo de div NEW DENIM COAT */
+div#NDC{
+  margin: auto;
+  margin-top: 0%;
+  display: block;
+  background-image: url("../images/PNG/model_5.png");
+  background-repeat: no-repeat;
+  background-position: 10px 30px;
+  background-size: 50%;
+  background-color: rgb(249, 249, 249);
+  width: 100%;
+  height: 800px;
+}
+/*---------------------- Estilo del div de texto y boton -----------------------------*/
+
+div#NDC_Text{
+  display: block;
+  width: 40%;
+  height: 60px;
+  margin-top:20%;
+  margin-right: 10%;
+  float: right;
+  color:  rgb(0, 0, 0);
+  text-align: center;
+}
+
+/* Estilo de boton */
+.NDCSHOP_NOW{
+  display: center;
+  margin-top: 5%;
+  border: none;
+  padding: 10px 40px;
+  background: rgb(0, 0, 0);
+  color:  rgb(255, 255, 255);
+}
+/* Estilo de texto */
+.NDCTitle{
+  color: rgb(0, 0, 0);
+  margin-top: 0%;
+  font-family: 'Rubik Mono One', sans-serif;
+  display: center;
+  font-size: 72px;
+}
+.NNDCText{
+  display: center;
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+}
+/*------------Desde aquì hacemos el div Jacket---------------*/
+/* Estilo de div JACKET */
+div#Jacket{
+  margin: auto;
+  margin-bottom: -50px;
+  display: block;
+  background-image: url("../images/PNG/model_woman_1.png");
+  background-repeat: no-repeat;
+  background-position: left 100%;
+  background-size: 50%;
+  background-color: rgb(249, 249, 249);
+  width: 100%;
+  height: 800px;
+}
+/*-------------------- Estilo del div de texto y boton -------*/
+div#J_Text{
+  display: block;
+  margin-top:10%;
+  margin-right: 15%;
+  float: right;
+  background-color: rgb(249, 249, 249);
+  text-align: center;
+}
+/* -------------Estilo de boton------------------ */
+.SHOP_NOW{
+  display: center;
+  margin-top: 10%;
+  border: none;
+  padding: 16px 48px;
+  background: rgb(0, 0, 0);
+  color:  rgb(255, 255, 255);
+}
+/* Estilo de texto */
+.NTitle{
+  color: rgb(0, 0, 0);
+  margin-top: 4%;
+  font-family: 'Rubik Mono One', sans-serif;
+  display: center;
+  font-size: 72px;
+}
+.NText{
+  display: center;
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+}
+/*-------------Seccion del Banner*-----------------*/
 .banner {
   width: 98%;
   line-height: 90px;
@@ -120,15 +420,15 @@ span{
   font-family: 'Quattrocento Sans', sans-serif;
   font-size: xx-large;
   font-weight: bolder; 
-} 
-  /*-------------Seccion del Footer*-----------------*/
-  footer {
+}
+ /*-------------Seccion del Footer*/
+    footer {
+    bottom: 0;
     width: 100%;
     height: 200px;
     margin:auto;
     position: relative;
-    background-color: aqua;
-    border: 1px solid black;
+    border: 1px solid   rgb(97, 97, 97);
     align-items: center;
   }
   .container{
@@ -138,13 +438,13 @@ span{
     width: 80%;
     height: 200px;
     background-color: pink;
-    border: 1px solid black;
+    border: 1px solid  rgb(0, 0, 0);
   }
   .container div{
     height: 200px;
     width: 230px;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 1px solid  rgb(0, 0, 0);
     align-items: center;
   }
   footer ul{
@@ -153,25 +453,23 @@ span{
   }
  footer h3 {
   text-align: center;
-  color: #000000; 
+  color: rgb(0, 0, 0); 
   font-family: 'Gugi';
   line-height: 30px;
   margin: 10px auto;
 }
 footer p li{
-  color: #9b9b9b;
+  color: rgb(97, 97, 97);
   font-family: 'Gugi';
   display: flex;
   align-items:space-around;
 }
 footer a {
   text-decoration: none;
-  color: #9b9b9b;
+  color:  rgb(97, 97, 97);
    margin: 10px 0 10px 0;
   font-family: 'Gugi';
 }
-
-  
 /*-------------Media queries*-----------------
 
   /*@media only screen and (min-width:641px) and (max-width:1280px){
