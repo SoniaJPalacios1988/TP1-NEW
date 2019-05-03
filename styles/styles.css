@@ -54,11 +54,74 @@ p {
 	width: 100%;
 	height: 600px;
 } 
-.dealers{
+header{
 	float: left;
 	padding: 16px;
 	font-family: 'Rubik Mono One', sans-serif;
-	margin-left: 4%;
+  margin-left: 4%;
+}
+/*----------------------- Menu principal--------------------- */
+.navbar{
+	float: right;
+	margin-right: 64px; 
+}
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+.menu > li > a{
+	display: block;
+	padding: 16px 16px;
+	font-family: 'Rubik', sans-serif;
+	color: rgb(0, 0, 0);
+}
+.menu li a:hover{
+	color: rgb(32, 125, 254); 
+	transition: all .3s;
+}
+/*-----------------------  Submenu---------------------  */
+.submenu{
+	position: absolute;
+	background: rgb(249, 249, 249);
+	width: 152%;
+	border-top: 4px solid rgb(32, 125, 254); 
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+.submenu li a{
+	display: block;
+	padding: 16px;
+	text-decoration: none;
+	font-family: 'Rubik', sans-serif;
+	color:  rgb(0, 0, 0);
+}
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+/* ------------------------------------------------Desde aquì hacemos el div Jacket------------------------------------------------- */
+
+/*----------------- Estilo de div JACKET -------------------*/
+div#jacket{
+  margin: auto;
+  display: block;
+	background-image: url("../images/PNG/model_woman_1.png");
+	background-repeat: no-repeat;
+	background-position: left 100%;
+	background-size: 50%;
+	background-color: rgb(249, 249, 249);
+	width: 100%;
+  height: 700px;
+}
+/*----------------- Estilo del div de texto y boton-------------------- */
+div#j_text{
+  display: block;
+  margin-top:10%;
+  margin-right: 15%;
+  float: right;
+	background-color: rgb(249, 249, 249);
+	text-align: center;
 }
 .mwtext{
     display: block;
@@ -140,72 +203,9 @@ p {
 .shopnow2 > a{
 	color: rgb(249, 249, 249);
 }
-/*----------------------- Menu principal--------------------- */
-.navbar{
-	float: right;
-	margin-right: 64px; 
-}
-.menu > li{
-	position: relative;
-	display: inline-block;
-}
-.menu > li > a{
-	display: block;
-	padding: 16px 16px;
-	font-family: 'Rubik', sans-serif;
-	color: rgb(0, 0, 0);
-}
-.menu li a:hover{
-	color: rgb(32, 125, 254); 
-	transition: all .3s;
-}
-/*-----------------------  Submenu---------------------  */
-.submenu{
-	position: absolute;
-	background: rgb(249, 249, 249);
-	width: 152%;
-	border-top: 4px solid rgb(32, 125, 254); 
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 1.5s;
-}
-.submenu li a{
-	display: block;
-	padding: 16px;
-	text-decoration: none;
-	font-family: 'Rubik', sans-serif;
-	color:  rgb(0, 0, 0);
-}
-.menu li:hover .submenu{
-	visibility: visible;
-	opacity: 1;
-}
-/* ------------------------------------------------Desde aquì hacemos el div Jacket------------------------------------------------- */
 
-/*----------------- Estilo de div JACKET -------------------*/
-div#Jacket{
-  margin: auto;
-  margin-bottom: -50px;
-  display: block;
-	background-image: url("../images/PNG/model_woman_1.png");
-	background-repeat: no-repeat;
-	background-position: left 100%;
-	background-size: 50%;
-	background-color: rgb(249, 249, 249);
-	width: 100%;
-  height: 700px;
-}
-/*----------------- Estilo del div de texto y boton-------------------- */
-div#J_Text{
-  display: block;
-  margin-top:10%;
-  margin-right: 15%;
-  float: right;
-	background-color: rgb(249, 249, 249);
-	text-align: center;
-}
 /*-------------------- Estilo de boton -----------------------------*/
-.SHOP_NOW{
+.black-button{
     display: center;
     margin-top: 10%;
 	border: none;
@@ -215,14 +215,14 @@ div#J_Text{
 	
 }
 /* Estilo de texto */
-.NTitle{
+.ntitle{
     color: rgb(0, 0, 0);
     margin-top: 4%;
     font-family: 'Rubik Mono One', sans-serif;
     display: center;
     font-size: 72px;
 }
-.NText{
+.ntext{
     display: center;
     font-family: 'Rubik', sans-serif;
     font-size: 24px;
@@ -316,56 +316,6 @@ span{
   font-size: medium;
   font-weight: bold;
 }
-/* ----------------------------------------- Estilo de NEW DENIM COAT ------------------------------------------------ */
-
-/* Estilo de div NEW DENIM COAT */
-div#NDC{
-  margin: auto;
-  margin-top: 0%;
-  display: block;
-  background-image: url("../images/PNG/model_5.png");
-  background-repeat: no-repeat;
-  background-position: 10px 30px;
-  background-size: 50%;
-  background-color: rgb(249, 249, 249);
-  width: 100%;
-  height: 800px;
-}
-/*---------------------- Estilo del div de texto y boton -----------------------------*/
-
-div#NDC_Text{
-  display: block;
-  width: 40%;
-  height: 60px;
-  margin-top:20%;
-  margin-right: 10%;
-  float: right;
-  color:  rgb(0, 0, 0);
-  text-align: center;
-}
-
-/* Estilo de boton */
-.NDCSHOP_NOW{
-  display: center;
-  margin-top: 5%;
-  border: none;
-  padding: 10px 40px;
-  background: rgb(0, 0, 0);
-  color:  rgb(255, 255, 255);
-}
-/* Estilo de texto */
-.NDCTitle{
-  color: rgb(0, 0, 0);
-  margin-top: 0%;
-  font-family: 'Rubik Mono One', sans-serif;
-  display: center;
-  font-size: 72px;
-}
-.NNDCText{
-  display: center;
-  font-family: 'Rubik', sans-serif;
-  font-size: 24px;
-}
 /*------------Desde aquì hacemos el div Jacket---------------*/
 /* Estilo de div JACKET */
 div#Jacket{
@@ -411,6 +361,57 @@ div#J_Text{
   font-family: 'Rubik', sans-serif;
   font-size: 24px;
 }
+/* ----------------------------------------- Estilo de NEW DENIM COAT ------------------------------------------------ */
+
+/* Estilo de div NEW DENIM COAT */
+div#ndc{
+  margin: auto;
+  margin-top: 0%;
+  display: block;
+  background-image: url("../images/PNG/model_5.png");
+  background-repeat: no-repeat;
+  background-position: 10px 30px;
+  background-size: 50%;
+  background-color: rgb(249, 249, 249);
+  width: 100%;
+  height: 800px;
+}
+/*---------------------- Estilo del div de texto y boton -----------------------------*/
+
+div#ndc_text{
+  display: block;
+  width: 40%;
+  height: 60px;
+  margin-top:20%;
+  margin-right: 10%;
+  float: right;
+  color:  rgb(0, 0, 0);
+  text-align: center;
+}
+
+/* Estilo de boton */
+.ndcshop_now{
+  display: center;
+  margin-top: 5%;
+  border: none;
+  padding: 10px 40px;
+  background: rgb(0, 0, 0);
+  color:  rgb(255, 255, 255);
+}
+/* Estilo de texto */
+.ndctitle{
+  color: rgb(0, 0, 0);
+  margin-top: 0%;
+  font-family: 'Rubik Mono One', sans-serif;
+  display: center;
+  font-size: 72px;
+}
+.nndctext{
+  display: center;
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+}
+
 /*-------------Seccion del Banner*-----------------*/
 .banner {
   width: 98%;
@@ -420,12 +421,13 @@ div#J_Text{
   font-family: 'Quattrocento Sans', sans-serif;
   font-size: xx-large;
   font-weight: bolder; 
+  background-color: #F6EA83;
 }
  /*-------------Seccion del Footer*/
     footer {
     bottom: 0;
     width: 100%;
-    height: 200px;
+    height: 250px;
     margin:auto;
     position: relative;
     border: 1px solid   rgb(97, 97, 97);
@@ -433,7 +435,6 @@ div#J_Text{
   }
   .container{
     display: flex;
-    flex-flow: row;
     margin: 0 auto;
     width: 80%;
     height: 200px;
@@ -441,6 +442,7 @@ div#J_Text{
     border: 1px solid  rgb(0, 0, 0);
   }
   .container div{
+    display: flex;
     height: 200px;
     width: 230px;
     margin: 0 auto;
@@ -451,8 +453,7 @@ div#J_Text{
     display: flex;
     flex-flow: row wrap;
   }
- footer h3 {
-  text-align: center;
+ .container h3 {
   color: rgb(0, 0, 0); 
   font-family: 'Gugi';
   line-height: 30px;
