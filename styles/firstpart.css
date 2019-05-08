@@ -1,0 +1,315 @@
+/*-----------------GUIA NOMBRE DE FUENTES -------------------
+  
+  Gugi|
+  Quattrocento+Sans 
+  Rubik Mono One
+  Rubik*/ 
+
+
+/*-----------------Seccion de productos elementos en comun*-----------*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+li, a, ul {
+  list-style: none;
+  text-decoration: none; 
+}
+p {
+  color:  rgb(97, 97, 97); 
+}
+ /* --------------------------------Sección del navegador y primera imagen---------------------------------------------------- */
+ header img {
+	position: relative;
+	height: 700px;
+	 width: 100%;
+ }
+	
+/*----------------------- Menu principal--------------------- */
+#iconmenu{
+	display: none;
+}
+header label {
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+}
+header label:hover{
+	cursor: pointer;
+}
+.mark {
+	display: inline-block;
+	position: absolute;
+	margin: 16px 0 0 16px;
+	padding:  5px auto;
+	text-align: center;
+	left: 0;
+	top: 0;
+	width: 100px;
+	font-family: 'Quattrocento';
+	font-weight: bold;
+	font-size: 20px;
+	color: rgb(249, 249, 249);
+	background-color: rgb(0, 0, 0);
+	border: black 2px solid ;
+	border-radius: 20px;
+}
+.navbar{
+	padding: 0 ;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	width: 600px;
+	height: 80px;
+	position: absolute;
+	font-family:'Quattrocento';
+}
+.menu{
+	padding: 0 0 0 10px;
+	margin: 10px auto;
+	font-size: 20px;
+	display: flex;
+	flex: flex-end;
+	text-align: center;
+}
+.menu > li{
+	position: relative;
+	display: inline-block;	
+}
+
+.menu > li > a{
+	display: block;
+	padding: 0 13px ;
+	color: rgb(97, 97, 97) ;
+	font-weight: bold;
+}
+.menu li a:hover {
+	color: rgb(32, 125, 254);
+	transition: all .3s;
+}
+/*-----------------Submenu-----------------------*/
+.submenu{
+	position: absolute;
+	background-color:rgb(249, 249, 249);
+	border-top-color: rgb(32, 125, 254);
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+	margin: 0 0 0 10px;
+}
+.submenu li{
+	padding: 15px;
+}
+.submenu  li a{
+	color:  rgb(97, 97, 97) ;
+	padding: 30px;
+}
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+	border-top: rgb(32, 125, 254);
+}
+
+/*------------Anuncios---------*/
+nav{
+	position: relative;
+}
+.maintext {
+	position: absolute;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	justify-items: center;
+	width: 400px;
+	height: 200px;
+	bottom: 5%;
+	top: 25%;
+	left: 10%;
+	font-family: 'Rubik', sans-serif;
+	font-weight: bold;
+}
+.maintitle{
+	font-family: 'Rubik Mono One';
+	font-size: 50px;
+	font-weight: bolder;
+}
+.season{
+display: inline-block;
+  font-family: 'Rubik', sans-serif;
+	font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  margin-right: 20%;
+  color:  rgb(97, 97, 97) ;
+}
+.mainprice{
+	margin-right: 20%;
+  padding: 10px 30px;
+  font-size: 20px;
+  
+}
+ul .mainprice{
+	display: inline-block;
+	margin-right: 20%;
+}
+ul .mainprice >li{
+	margin: 0 40px 0 0px;
+}
+.price-on{
+	display: inline-block;
+	padding: 20px 30px 0 0 ;
+	text-align: center;
+	color:  rgb(0, 0, 0) ;
+}
+.price-off{
+	display: inline-block;
+	padding: 20px 0 0 0;
+	text-align: center;
+	text-decoration: line-through;
+	color:  rgb(97, 97, 97) ;
+}
+ ul >li > span{
+  color: rgb(97, 97, 97);
+  margin: 0px 5px 0 5px;
+  text-decoration-line: line-through;
+}
+/*------------Botones de compra---------*/
+.shopnow >li >a{
+	font-size: 12px;
+}
+.shop-right{
+	display: inline-block;
+	padding: 10px 28px;
+	border: solid 2px;
+	border-color:  rgb(32, 125, 254);
+	font-family: 'Rubik', sans-serif;
+  text-align: center;
+	background-color: transparent;
+	color: rgb(32, 125, 254);
+}
+.shop-right > a{
+	color: rgb(32, 125, 254);
+}
+.shop-left{
+	display: inline-block;
+	padding: 10px 28px;
+	border: solid 2px rgb(32, 125, 254);
+	background-color: rgb(32, 125, 254);
+	font-family: 'Rubik', sans-serif;
+	text-align: center;
+	color: rgb(249, 249, 249);
+}
+.shop-right > a{
+	color: rgb(249, 249, 249);
+}
+/*-----------------Seccion de productos -----------*/
+.products-up, .products-down {
+	display: flex;
+	flex-direction: row;
+    width: 80%;   
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    align-items: center;
+  }
+  .products-up > div img, .products-down >  div img{
+    justify-content: space-between;
+    height: 400px;
+    width: 100%;
+    max-width: 400px;
+    position:relative;
+    padding: 0 0 0 2%;
+  }
+  .box { 
+    display: flex;
+    position: absolute;
+    bottom: 70px;
+    flex-direction: row wrap;
+    width: 80%;
+    height: 120px;
+    margin: auto;
+		position: relative;
+		align-items: center;
+  }
+  .box div{
+    height: 120px;
+    width: 230px;
+    margin: auto;
+  }
+  /* ---------------------Caja describiendo ofertas----------------*/
+  div > .description ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+  }
+  .description li{
+    margin: 0;   
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+  }
+  .product {
+    font-family: 'Gugi', cursive;
+    font-size: 18px;
+    padding: 0 1% 0 2%;
+    font-weight: bold;
+  }
+.price{
+	font-family: 'Gugi', cursive;
+	font-size: 20px;
+	padding: 0 1% 0 2%;
+	font-weight: bold;
+  }
+  .on-sale{
+	  display: inline-block;
+	  padding: 20px;
+	  text-align: center;
+  }
+  .old-sale{
+	  display: inline-block;
+	  padding: 20px;
+	  text-align: center;
+	  text-decoration: line-through;
+  }
+  .price > li{
+	font-family: 'Gugi', cursive;
+	color: rgb(0, 0, 0);
+	font-size: medium;
+  }
+  .box2 >span{
+	color: rgb(97, 97, 97);
+	margin: 0px 5px 0 5px;
+	text-decoration-line: line-through;
+  }
+  .box2 > ul ul li{
+	  padding: 0 auto;
+  } 
+  /*-----------SALE TAG------------------------------*/
+  .sale-tag {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 320px;
+    right: 0;
+    background-color:#F6EA83;
+    height: 30px;
+    width: 90px;
+    padding: 2px;
+    transform: rotate(-90deg);
+    color: rgb(0, 0, 0);
+    font-family: 'Gugi';
+    text-align: center;
+    font-weight: bold;
+	}
+	.products-down >.sale-tag {
+		float: inline-end;
+		top: 60px;
+    right: 320px;
+		
+	}
+

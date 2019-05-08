@@ -6,48 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
      minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link href="styles/firstpart.css" rel="stylesheet" type="text/css">
+    <link href="styles/secondpart.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Gugi|Luckiest+Guy|
-    Quattrocento+Sans"rel="stylesheet">
+    Quattrocento+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
     <link href="https://fontawesome.com/icons/bars?style=solid">
     </link>
     <title>TP 1 NEW</title>
 </head>
-
 <body>
-    <!----------------------- Inicio Madwell ---------------------->
-    <div class="main">
-        <header class="bussiness">Dealers</header>
-        <nav class="navbar">
-            <ul class="menu">
-                <li><a href="#">COLLECTION &#5633</a>
-                    <ul class="submenu">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">Women</a></li>
-                        <li><a href="#">Children</a></li>
-                        <li><a href="#">Sub Menu &#5171</a></li>
-                    </ul>
-                <li><a href="#">SHOP</a></li>
-                <li><a href="#">CATALOGS</a></li>
-                <li><a href="#">CONTACTS</a></li>
-            </ul>
-        </nav>
-        <div class="maintext">
-            <h2 class="maintitle">MADEWELL</h2>
-            <p class="season">Summer collection</p>
-            <ul class="mainprice">
-                <li class="price-on">$1.499</li>
-                <li class="price-off"><span>$1.999</span></li>
-            </ul>
-            <ul class="shopnow">
-                <input class="shop-right" type="submit" value="SHOP NOW">
-                <input class="shop-left" type="submit" value="SHOP NOW">
-            </ul>
-        </div>
-    </div>
-    <!-- -----------------Fin Madwell----------- -->
+    <!----------------------- Seccion de primera imagen y menu ---------------------->
+    <header>
+        <div class="first-image">
+            <img src="images/JPEG/hero_2.jpg">
+            <div>
+                <span class="mark">Dealers</span>
+            </div>
+            <input type="checkbox" id="iconmenu">
+            <label for="iconmenu"> <img src="iconos/shoes.png"></label>
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="#">COLLECTION &#5633</a>
+                        <ul class="submenu">
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Children</a></li>
+                            <li><a href="#">Sub Menu &#5171</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">CATALOGS</a></li>
+                    <li><a href="#">CONTACTS</a></li>
+                </ul>
+            </nav>
+            <div class="maintext">
+                <h2 class="maintitle">MADEWELL</h2>
+                <p class="season">Summer collection</p>
+                <ul class="mainprice">
+                    <li class="price-on">$1.499</li>
+                    <li class="price-off"><span>$1.999</span></li>
+                </ul>
+                <ul class="shopnow">
+                    <input class="shop-right" type="submit" value="SHOP NOW">
+                    <input class="shop-left" type="submit" value="SHOP NOW">
+                </ul>
+            </div>
+    </header>
+    <!-- -----------------Seccion de productos up----------- -->
     <section class="products-up">
         <div class="item1"> <img src="images/JPEG/product_1.jpg" alt:"shoes">
         </div>
@@ -61,7 +68,7 @@
         <div class="box1">
             <ul class="description">
                 <li class="product">The Shoe</li>
-                <li class="collection">Summer Collection</li>
+                <li class="season">Summer Collection</li>
                 <ul class="price">
                     <li class="on-sale">$9.50</li>
                 </ul>
@@ -70,8 +77,8 @@
         <div class="box2">
             <ul class="description">
                 <li class="product">Marc Jacobs Bag</li>
-                <li class="collection">Summer Collection</li>
-                <ul class=price>
+                <li class="season">Summer Collection</li>
+                <ul class="price">
                     <li class="on-sale">$9.50 <span class="old-sale">$30.50</span>
                     </li>
                 </ul>
@@ -80,27 +87,30 @@
         <div class="box3">
             <ul class="description">
                 <li class="product">The Belt</li>
-                <li class="collection">Summer Collection</li>
-                <ul class=price>
+                <li class="season">Summer Collection</li>
+                <ul class="price">
                     <li class="on-sale">$9.50</li>
                 </ul>
             </ul>
         </div>
     </section>
-    <!------------------ Desde aquì hacemos el div Jacket--------- -->
-    <div id="jacket">
-        <div id="j_text">
-            <p class="ntext"># NEW SUMMER COLLECTION 2019</p>
-            <h2 class="ntitle">JACKET</h2>
-            <input class="black-button" type="submit" value="SHOP NOW">
+    <!------------SEGUNDA IMAGEN JACKET----------------->
+    <section class="second-image">
+        <div>
+            <img src="images/PNG/model_woman_1.png">
         </div>
-    </div>
-    <!-- Terminamos el div Jacket ------------------------>
-    <!------------Banner------------------------------->
+        <div class="second-announcement">
+            <div class="maintext second">
+                <p class="season"># NEW SUMMER COLLECTION</p>
+                <h2 class="maintitle">JACKET</h2>
+                <input class="shop-now" type="submit" value="SHOP NOW">
+            </div>
+    </section>
+    <!------------BANNER----------------->
     <section class="banner">
         <div>COLLECTIONS</div>
     </section>
-    <!------------Seccion de productos----------------->
+    <!------------Seccion de productos down----------------->
     <section class="products-down">
         <div class="item3"> <img src="images/JPEG/product_3.jpg" alt:"belts">
         </div>
@@ -111,6 +121,15 @@
         </div>
     </section>
     <section class="box">
+        <div class="box3">
+            <ul class="description">
+                <li class="product">The Belt</li>
+                <li class="collection">Summer Collection</li>
+                <ul class=price>
+                    <li class="on-sale">$9.50</li>
+                </ul>
+            </ul>
+        </div>
         <div class="box1">
             <ul class="description">
                 <li class="product">The Shoe</li>
@@ -129,26 +148,20 @@
                 </ul>
             </ul>
         </div>
-        <div class="box3">
-            <ul class="description">
-                <li class="product">The Belt</li>
-                <li class="collection">Summer Collection</li>
-                <ul class=price>
-                    <li class="on-sale">$9.50</li>
-                </ul>
-            </ul>
-        </div>
-    </section>
-    <!-- Desde aquì hacemos el div NEW DENIM COAT -->
-    <div id="ndc">
-        <div id="ndc_text">
-            <p class="nndctext"># NEW SUMMER COLLECTION 2019</p>
-            <h2 class="ndctitle">NEW DENIM COAT</h2>
-            <input class="ndcshop_now" type="submit" value="SHOP NOW">
-        </div>
 
-    </div>
-    <!-- Terminamos la seccion NEW DENIM COAT-->
+    </section>
+    <!-----------TERCERA IMAGEN COAT----------------->
+    <section class="third-image">
+        <div>
+            <img src="images/PNG/model_5.png">
+        </div>
+        <div class="third-annoucement">
+            <div class="third">
+                <p class="season"># NEW SUMMER COLLECTION 2019</p>
+                <h2 class="maintitle">NEW DENIM COAT</h2>
+                <input class="shop-now" type="submit" value="SHOP NOW">
+            </div>
+    </section>
 </body>
 <footer>
     <div class="container">
@@ -191,3 +204,4 @@
         </div>
     </div>
 </footer>
+</html>
