@@ -1,4 +1,5 @@
- /*-----------------------Segunda Imagen------------------*/
+ /*-----------------------Segunda Imagen---HECHO POR DEBORA, CORRECION EN LAS CLASES Y ALGUNOS
+ ATRIBUTOS POR SONIA---------------*/
   section img{
     position: relative;
     height: 700px;
@@ -20,14 +21,14 @@
     font-size: 70px;
     color: rgb(0, 0, 0)   
   }
-  /*---------------BOTON NEGRO-------------*/
+  /*---------------BOTON NEGRO----HECHO POR DEBORA---------*/
    .shop-now{
     padding: 5px 5px;
     background:  rgb(0, 0, 0);
     color:  rgb(255, 255, 255);	
     width: 50%;
    }
-    /*-------------Seccion del Banner*-----------------*/
+    /*-------------Seccion del Banner  HECHO POR SONIA----------------*/
   .banner {
       width: 98%;
       line-height: 90px;
@@ -38,7 +39,8 @@
       font-weight: bolder; 
       padding: 10px 0 10px 0;
     }
-    /*-------------TERCERA IMAGEN COAT-----------------*/
+    /*-------------TERCERA IMAGEN COAT----HECHA POR DEBORA, CON MODIFICAIONES DE LAS
+    CLASES Y ALGUNS ATRIBUTOS POR SONIA-------------*/
     .third-image img{
       position: relative;
     }
@@ -73,7 +75,7 @@
     justify-content: center;
     text-align: center;
   }
-     /*-------------Seccion del Footer----------------------*/
+     /*-------------Seccion del Footer---HECHA POR SONIA-------------------*/
      footer {
       bottom: 0;
       width: 80%;
@@ -133,7 +135,7 @@
    flex-flow: column-reverse;
   
   }
-  /*-----------------BREAK POINTS----------------------------*/
+  /*-----------------BREAK POINTS----HECHOS POR SONIA------------------------*/
   @media only screen  and (max-width:640px){
     .products-down > div img{
       margin:auto;
@@ -141,23 +143,22 @@
       height: 400px;
       display:flex;
       align-items: baseline;
-    }  
-header label{
-  display: block;
-}
-
-  @media only screen and (max-width:640px){
-      .products-down >.item1, .item3, .box1, .box3{
-        display: none;
-        overflow: hidden;
     }
-    .products-up >.item3, .box3{
+  @media only screen and (min-width:320px) and (max-width:800px){
+    .products-up >.item3{
+      display: none;
+      overflow: hidden;
+    }
+    .box{
+      display: flex;
+    }
+    .products-down >.item1, .item3, .box3, .bo1{
       display: none;
       overflow: hidden;
     }
   }
   /*-----------------BREAK POINTS----------------------------*/
-@media only screen and (max-width:640px){
+    @media only screen and (max-width:640px){
     .products-down > div img{
       margin:auto;
       width:98%;
@@ -166,25 +167,21 @@ header label{
       align-items: baseline;
     }  
   }
-@media only screen and (max-width:650px){
-.first-image img{
-  display: flex;
-  flex-flow: column;
-}
-.menu{
-  display: none;
-  overflow: hidden;
-  }
-  #iconmenu .menu li a:hover{
-    display: block;
-    transition: all .3s;
-}
-
-@media  (height: 640px){
-  .container{
-    display: block;
-      width: 50%;
+    @media only screen and (max-width:650px){
+    .first-image img{
+      display: flex;
+      flex-flow: column;
+    }
+    .menu{
+      display: none;
+      overflow: hidden;
+      width: 10%;
+      }
+    @media  (height: 640px){
+      .container{
+        display: block;
+          width: 50%;
+        }
+      }
     }
   }
-}
-}

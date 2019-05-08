@@ -26,18 +26,10 @@ p {
 	 width: 100%;
  }
 	
-/*----------------------- Menu principal--------------------- */
+/*----------------------- Menu principal,  hecho por DEBORA
+CON MODIFICACIONES DE LAS CLASES Y ATRIBUTOS POR SONIA--------------------- */
 #iconmenu{
 	display: none;
-}
-header label {
-	display: none;
-	width: 30px;
-	height: 30px;
-	padding: 10px;
-}
-header label:hover{
-	cursor: pointer;
 }
 .mark {
 	display: inline-block;
@@ -113,7 +105,9 @@ header label:hover{
 	border-top: rgb(32, 125, 254);
 }
 
-/*------------Anuncios---------*/
+/*------------Anuncios----HECHO POR DEBORA, MODIFICADO POR SONIA EN LAS
+LOS NOMBRES DE LAS CLASES Y POSICIONAMIENTO DE LOS CONTENEDORES
+PARA NO REPETIR CODIGO-----*/
 nav{
 	position: relative;
 }
@@ -176,7 +170,8 @@ ul .mainprice >li{
   margin: 0px 5px 0 5px;
   text-decoration-line: line-through;
 }
-/*------------Botones de compra---------*/
+/*------------Botones de compra--HECHOS POR DEBORA-
+Modificacion en nombre de las clases por Sonia------*/
 .shopnow >li >a{
 	font-size: 12px;
 }
@@ -205,7 +200,7 @@ ul .mainprice >li{
 .shop-right > a{
 	color: rgb(249, 249, 249);
 }
-/*-----------------Seccion de productos -----------*/
+/*-----------------Seccion de productos -HECHO POR SONIA----------*/
 .products-up, .products-down {
 	display: flex;
 	flex-direction: row;
@@ -239,7 +234,7 @@ ul .mainprice >li{
     width: 230px;
     margin: auto;
   }
-  /* ---------------------Caja describiendo ofertas----------------*/
+  /* -------------Caja describiendo ofertas----HECHO POR SONIA------------*/
   div > .description ul{
     display: flex;
     flex-wrap: wrap;
@@ -287,7 +282,7 @@ ul .mainprice >li{
   .box2 > ul ul li{
 	  padding: 0 auto;
   } 
-  /*-----------SALE TAG------------------------------*/
+  /*-----------SALE TAG-----HECHO POR SONIA-------------------------*/
   .sale-tag {
     display:flex;
     justify-content: center;
