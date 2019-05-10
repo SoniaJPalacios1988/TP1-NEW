@@ -3,23 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
-     minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+     minimum-scale=1.0"> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="styles/firstpart.css" rel="stylesheet" type="text/css">
-    <link href="styles/secondpart.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Gugi|Luckiest+Guy|
     Quattrocento+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
     <link href="https://fontawesome.com/icons/bars?style=solid">
+    <link href="styles/firstpart.css" rel="stylesheet" type="text/css">
+    <link href="styles/secondpart.css" rel="stylesheet" type="text/css">
     </link>
+    <link rel="stylesheet" href="tp-results/result.css">
+    <script src="tp-results/result.js" type="text/javascript"></script>
     <title>TP 1 NEW</title>
 </head>
 <body>
     <!----------------------- Seccion de primera imagen y menu ---------------------->
     <header>
-        <div class="first-image">
+        <div class="first-image"> <!--este div no está bien cerrado-->
             <img src="images/JPEG/hero_2.jpg">
             <div>
                 <span class="mark">Dealers</span>
@@ -46,8 +49,8 @@
                     <li class="price-on">$1.499</li>
                     <li class="price-off"><span>$1.999</span></li>
                 </ul>
-                <ul class="shopnow">
-                    <input class="shop-right" type="submit" value="SHOP NOW">
+                <ul class="shopnow"><!--un <ul> debería contener lis-->
+                    <input class="shop-right" type="submit" value="SHOP NOW"><!--estos elementos debían ser etiquetas <a> estiladas como botones-->
                     <input class="shop-left" type="submit" value="SHOP NOW">
                 </ul>
             </div>
@@ -67,7 +70,7 @@
             <ul class="description">
                 <li class="product">The Shoe</li>
                 <li class="season">Summer Collection</li>
-                <ul class="price">
+                <ul class="price"><!--este ul debería estar dentro de un li-->
                     <li class="on-sale">$9.50</li>
                 </ul>
             </ul>
@@ -97,7 +100,7 @@
         <div>
             <img src="images/PNG/model_woman_1.png">
         </div>
-        <div class="second-announcement">
+        <div class="second-announcement"><!--este div no está bien cerrado-->
             <div class="maintext second">
                 <p class="season"># NEW SUMMER COLLECTION</p>
                 <h2 class="maintitle">JACKET</h2>
@@ -106,7 +109,7 @@
     </section>
     <!------------BANNER----------------->
     <section class="banner">
-        <div>COLLECTIONS</div>
+        <div>COLLECTIONS</div><!--si solo vamos a mostrar texto deberíamos usar etiquetas más semánticas-->
     </section>
     <!------------Seccion de productos down----------------->
     <section class="products-down">
